@@ -31,14 +31,14 @@
       modules = [
         ./hosts/${hostname}/modules
 
-        home-manager.nixosModules.home-manager
-        {
-          home-manager = {
-            useGlobalPkgs = true;
-            useUserPackages = true;
-            users.${user} = ./hosts/${hostname}/home-manager/home.nix;
-          };
-        }
+        # home-manager.nixosModules.home-manager
+        # {
+        #   home-manager = {
+        #     useGlobalPkgs = true;
+        #     useUserPackages = true;
+        #     users.${user} = ./hosts/${hostname}/home-manager/home.nix;
+        #   };
+        # }
       ];
     };
   in
