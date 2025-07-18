@@ -1,4 +1,4 @@
 { hostname, ... }:
 {
-  networknig.hostName = hostname;
+  networking.hostName = hostname;
 }

@@ -3,10 +3,10 @@
   programs.starship = {
     enable = true;
     package = pkgs.starship;
-    enableZshIntegration = true;
     
     settings = {
       add_newline = false;
+      enableZshIntegration = true;
       
       format = ''
         [{](bold #bd93f9)$username[@](bold #ff79c6)$hostname[}:](bold #bd93f9)[{](bold #8be9fd)$directory[}](bold #8be9fd)

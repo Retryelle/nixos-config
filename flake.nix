@@ -21,7 +21,7 @@
       }
     ];
 
-    build = { user, hostname, system, stateVersion }: nixpkgs.lib.nixosSystem {
+    build = { hostname, system, stateVersion }: nixpkgs.lib.nixosSystem {
       system = system;
       
       specialArgs = {

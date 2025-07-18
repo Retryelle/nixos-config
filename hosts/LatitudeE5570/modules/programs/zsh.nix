@@ -2,7 +2,6 @@
 {
   programs.zsh = {
     enable = true;
-    package = pkgs.zsh;
     
     histSize = 10000;
     histFile = "$HOME/.zsh_history";
