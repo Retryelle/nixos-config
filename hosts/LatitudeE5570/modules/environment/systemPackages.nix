@@ -10,8 +10,6 @@
     hyprlock
     hyprpaper
     hyprpicker
-    imv
-    mpv
     neofetch
     neovim
     playerctl
