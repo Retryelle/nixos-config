@@ -38,6 +38,9 @@
             useUserPackages = true;
             users.${user} = ./hosts/${hostname}/home-manager/home.nix;
             backupFileExtension = "backup";
+            extraSpecialArgs = {
+              inherit user hostname stateVersion;
+            };
           };
         }
       ];

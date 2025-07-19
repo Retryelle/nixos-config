@@ -5,6 +5,7 @@
     alacritty
     brightnessctl
     firefox
+    fzf
     hypridle
     hyprland
     hyprlock
@@ -14,7 +15,9 @@
     neovim
     playerctl
     ranger
+    starship
     waybar
+    wl-clipboard
     wofi
   ];
 }

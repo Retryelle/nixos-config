@@ -5,13 +5,11 @@
     package = pkgs.starship;
     
     settings = {
-      add_newline = false;
-      enableZshIntegration = true;
+      add_newline = true;
       
       format = ''
-        [{](bold #bd93f9)$username[@](bold #ff79c6)$hostname[}:](bold #bd93f9)[{](bold #8be9fd)$directory[}](bold #8be9fd)
-        $symbol
-        
+        [{](bold #bd93f9)$username[@](bold #ff79c6)$hostname[}:](bold #bd93f9)[{](bold #bd93f9)$directory[}](bold #bd93f9)
+        $character
       '';
 
       username = {
@@ -23,7 +21,7 @@
       };
 
       hostname = {
-        ssh_only = true;
+        ssh_only = false;
         ssh_symbol = "{SSH}:";
         trim_at = "";
         format = "[$ssh_symbol$hostname]($style)";
@@ -46,12 +44,12 @@
 
       character = {
         format = "$symbol";
-        success_symbol = "[>](bold #50fa7b)";
-        error_symbol = "[>](bold #ff5555)";
-        vimcmd_symbol = "[<](bold #50fa7b)";
-        vimcmd_replace_one_symbol = "[<](bold #bd93f9)";
-        vimcmd_replace_symbol = "[<](bold #bd93f9)";
-        vimcmd_visual_symbol = "[<](bold #f1fa8c)";
+        success_symbol = "[> ](bold #50fa7b)";
+        error_symbol = "[> ](bold #ff5555)";
+        vimcmd_symbol = "[< ](bold #50fa7b)";
+        vimcmd_replace_one_symbol = "[< ](bold #bd93f9)";
+        vimcmd_replace_symbol = "[< ](bold #bd93f9)";
+        vimcmd_visual_symbol = "[< ](bold #f1fa8c)";
         disabled = false;
       };
     };

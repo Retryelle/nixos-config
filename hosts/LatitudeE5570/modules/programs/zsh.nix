@@ -12,14 +12,13 @@
     shellInit = "";
 
     promptInit = ''
-      prompt off
       eval "$(starship init zsh)"
     '';
 
     autosuggestions = {
       enable = true;
       async = true;
-      strategy = [ "history" "completion" ];
+      strategy = [ "completion" ];
     };
 
     syntaxHighlighting = {

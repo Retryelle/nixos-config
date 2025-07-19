@@ -8,8 +8,8 @@
     dhcp = "internal";
 
     wifi = {
-      backend = "iwd";
-      powersave = "false";
+      backend = "wpa_supplicant";
+      powersave = false;
       macAddress = "random";
       scanRandMacAddress = true;
     };
